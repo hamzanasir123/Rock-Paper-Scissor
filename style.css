@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b1c9ef;
+}
+
+h1 {
+    background-color: #395886;
+    color: #D5DEEF;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    flex-wrap: wrap; /* Wrap choices to fit smaller screens */
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+    flex-wrap: wrap; /* Wrap elements if needed on smaller screens */
+}
+
+#User-Score, #Comp-score {
+    font-size: 3rem; /* Smaller font for smaller screens */
+    margin-top: 3rem;
+}
+
+.msg-container {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.msg {
+    margin-top: 2rem;
+    background-color: #395886;
+    color: #D5DEEF;
+    font-size: 2rem;
+    display: inline;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+    
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    .choices {
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .score-board {
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+
+    #User-Score, #Comp-score {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .msg {
+        font-size: 1.5rem;
+    }
+}
